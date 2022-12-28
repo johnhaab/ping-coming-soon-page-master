@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+:root {
+    --primary-color: hsl(223, 87%, 63%);
+    --secondary-color-1: hsl(223, 100%, 75%);
+    --secondary-color-2: hsl(354, 100%, 66%);
+    --secondary-color-gray: hsl(0, 0%, 59%);
+    --secondary-color-dark-blue: hsl(209, 33%, 12%);
+
+    --main-font: 'Libre Franklin', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#logo {
+    padding-bottom: 3rem;
+}
+
+.title {
+    font-weight: 100;
+    color: var(--secondary-color-gray);
+    font-size: 2.5rem;
+    padding-bottom: .7rem;
+}
+
+.bold {
+    font-weight: 900;
+    color: var(--secondary-color-dark-blue)
+}
+
+.sub-title {
+    font-weight: 600;
+    color: var(--secondary-color-gray);
+    padding-bottom: 2.5rem;
+}
+
+.email-field {
+    padding-bottom: 2rem;
+}
+
+#input {
+    padding: .9rem 1.25rem;
+    width: 55%;
+    border-radius: 4rem;
+    outline: 1px solid var(--secondary-color-gray);
+    border: none;
+    transform: translate(-.5rem, 0rem);
+}
+
+.email-field button {
+    padding: .9rem 1.25rem;
+    width: 25%;
+    border-radius: 4rem;
+    background-color: var(--primary-color);
+    border: none;
+    font-family: var(--main-font);
+    font-weight: 600;
+    color: #fff;
+    transform: translate(.5rem, 0rem);
+    box-shadow: hsl(223, 87%, 63%, .25) 0px 6px 15px 4px;
+    cursor: pointer;
+}
+
+.email-field button:hover {
+    background-color: var(--secondary-color-1);
+}
+
+.email-field p {
+    display: none;
+    position: absolute;
+    padding-left: 4.9rem;
+    padding-top: .8rem;
+    color: #b32121;
+    font-size: .85rem;
+    font-style: italic;
+}
+
+::placeholder {
+    color: var(--secondary-color-gray);
+    font-weight: 600;
+}
+
+.main-img {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.socails {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1rem;
+}
+
+.socails a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: .6rem .8rem .6rem .8rem;
+    border: 1px solid var(--secondary-color-gray);
+    border-radius: 4rem;
+}
+
+.socails a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+}
+
+.copyright {
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--secondary-color-gray);
+}
+
+
+/* ERROR STATE */
+
+.error p {
+    display: block
+}
+
+.error #input {
+    outline: 1px solid #b32121;
+}
