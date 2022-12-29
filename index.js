@@ -15,5 +15,5 @@ submitBtn.addEventListener("click", (e) => {
     }else{
         console.log("error");
         form.classList.add("error");
-    }
+    } 
 })
