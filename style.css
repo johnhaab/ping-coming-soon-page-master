@@ -160,20 +160,12 @@ body {
     }
 
     #input {
-        padding: .9rem 1.25rem;
         width: 70%;
         border-radius: 4rem;
-        outline: 1px solid var(--secondary-color-gray);
-        border: none;
     }
 
     .email-field button {
         width: 70%;
-        border-radius: 4rem;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
         box-shadow: hsl(223, 87%, 63%, .25) 0px 6px 15px 4px;
         transform: translate(-.35rem, 2rem);
     }
